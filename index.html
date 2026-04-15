@@ -6,51 +6,70 @@
     <title>Blessings Tamanga Web</title>
 </head>
 <body>
+
+    <!-- Header content-->
     <header>
-        <h1>Blessings Tamanga Web</h1>
-        <p><em>software engineer</em></p>
+        <div class="Logo">
+             <span>Blessings Tamanga Portfolio</span>
+        </div>
+        
+        <nav class="topnavbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+        
+            </ul>
+        </nav>
+      
     </header>
+
+    <!--Main content-->
     <main>
-        <section>
+
+        <!-- Hero section -->
+        <section class="Hero_section">
+            <h1> Hello, I'm Blessings Exton Tamanga</h1>
+            <p><em>software engineer</em></p>
+            <a href="about.html"><button>learn more</button></a>
+        </section>
+
+        <!-- About section -->
+        <section class="About">
             <h2>
-              Short Bio
+              About
             </h2>
             <p>
-                Hello My Name is Blessings Tamanga,
-                from Lilongwe Malawi, student at NACIT majoring CIS,
-                I can code websites using HTML,CSS,JS for frontend and PHP for backend,
-                I can also code in Python and C#
+               I'm a software engineer and a web developer with a passion for creating intuitive and visually appealing web experiences.<br> With a background in Business Information technology, I bridge the gap between technical functionality and user-centered design.
             </p>
 
         </section>
-        
-        <section>
-            <h2>
-                Career goals
-            </h2>
-            <ol>
-                <li>finishing all my assignments</li>
-                <li>Building core skills in Software development and web development</li> 
-                <li>get my certificate from University Of Greenwich</li>
-            </ol>
-        </section>
 
-        <section>
-            <h2>Likes</h2>
-            <p>There are alot of things that i like and they include the following:</p>
-            <ul>
-                <li>Books</li>
-                <li>Youtube videos</li>
-                <li>Coding</li>
-                <li>Chess</li>
-                <li>Food</li>
-            </ul>
+        <section class="contact">
+            <h2>Contact me</h2>
+            <p><em>your message and your info below</em></p>
+
+            <form action="" method="POST">
+                <label for="name"><strong>username:</strong></label>
+                <input type="text" id="name" name="name"  placeholder="Enter your username" required>
+
+                <br><br>
+                <label for="email"><strong>email:</strong></label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <br><br>
+
+                <label for="message"><strong>message:</strong></label>
+                <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+                <br><br>
+                <button type="submit">Send Message</button>
+            </form>
 
         </section>
-
     <main>
+
+
+    <!-- Footer content -->
     <footer>
-        <a href="content.html">@More content</a>
+        <a href="about.html">@More content</a>
     </footer>
 </body>
 </html>
