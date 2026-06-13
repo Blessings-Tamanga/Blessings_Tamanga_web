@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    color: #222;
+    line-height: 1.6;
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.816);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    z-index: 1000;
+}
+
+.icon img {
+    width: 20px;
+}
+
+.logo span {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-link ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.hero-section {
+    margin: 80px auto 60px;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: auto;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.hero-content h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    text-align: left;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background: #ffffff;
+    color: #555;
+    border: 1px solid #555;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #555;
+    transition: 0.3s;
+    color: white;
+}
+
+section {
+    margin: 50px auto;
+    max-width: 600px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    color: #333;
+}
+
+.social-icons a img {
+    width: 20px;
+}
+
+.social-icons a img:hover {
+    transform: translateY(-10px);
+    transition: 0.3s ease-in-out;
+}
+
+.about h2,
+.contact h2,
+.experience h2,
+.projects h2,
+.faq h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.about p {
+    text-align: left;
+}
+
+/* Experience Section */
+.experience {
+    margin: 50px auto;
+    max-width: 600px;
+    text-align: left;
+}
+
+.experience-item {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 5px;
+}
+
+.exp-header h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+}
+
+.exp-header .date {
+    font-size: 13px;
+    color: #888;
+    white-space: nowrap;
+    margin-left: 10px;
+}
+
+.company {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+/* Projects Section */
+.projects {
+    margin: 50px auto;
+    max-width: 600px;
+    text-align: left;
+}
+
+.project-item {
+    margin-bottom: 30px;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.project-item:hover {
+    border: 1px solid #ccc;
+    transition: 0.3s ease-in-out;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 5px;
+}
+
+.project-header h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+}
+
+.project-header h3 img {
+    width: 10px;
+}
+
+.project-header .date {
+    font-size: 13px;
+    color: #888;
+    white-space: nowrap;
+    margin-left: 10px;
+}
+
+.project-role {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+/* FAQ Section */
+.faq {
+    margin: 50px auto;
+    max-width: 600px;
+    text-align: left;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    background: #fff;
+}
+
+.faq-item summary {
+    font-size: 15px;
+    font-weight: 600;
+    color: #222;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: "+";
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+}
+
+.faq-item[open] summary::after {
+    content: "−";
+}
+
+.faq-item p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.faq-item[open] {
+    border-color: #999;
+    transition: 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .exp-header,
+    .project-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .exp-header .date,
+    .project-header .date {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact textarea {
+    min-height: 100px;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
+    color: #555;
+}
