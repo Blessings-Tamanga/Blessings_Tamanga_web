@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="script.js" defer></script>
     <title>Blessings Tamanga Web</title>
 </head>
 
@@ -15,14 +16,18 @@
     <header>
         <div class="logo">
             <span>BTamanga.dev</span>
+
+            <span class="hamburger">&#9776;</span>
         </div>
 
         <nav class="nav-link">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="experience.html">Experience</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#faq">Faq</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -49,7 +54,7 @@
             </div>
         </section>
 
-        <section class="about">
+        <section class="about" id="about">
             <h2><i class="icon"><img src="image.png" alt=""></i>About</h2>
             <p>
                 I'm a software engineer and web developer with a deep passion for creating intuitive, visually
@@ -83,7 +88,7 @@
         </section>
 
         <!-- Experience Section -->
-        <section class="experience">
+        <section class="experience" id="experience">
             <h2><i class="icon"><img src="user-experience.png" alt=""></i>Experience</h2>
 
             <div class="experience-item">
@@ -100,7 +105,7 @@
         </section>
 
         <!-- Projects Section -->
-        <section class="projects">
+        <section class="projects" id="projects">
             <h2><i class="icon"><img src="image.png" alt=""></i>Projects</h2>
 
             <div class="project-item">
@@ -123,41 +128,108 @@
 
            
         <!-- FAQ Section -->
-        <section class="faq">
-            <h2><i class="icon"><img src="image.png" alt=""></i>FAQ</h2>
+       <!-- FAQ Section -->
+<section class="faq" id="faq">
+    <h2>
+        <i class="icon">
+            <img src="image.png" alt="">
+        </i>
+        FAQ
+    </h2>
 
-            <details class="faq-item">
-                <summary>What services do you offer?</summary>
-                <p>I offer full-stack web development, UI/UX design, AI-driven solutions, and IT consulting. Whether you need a business website, an ecommerce platform, or a custom software solution, I can help bring your vision to life.</p>
-            </details>
+    <div class="faq-item">
+        <div class="faq-question">
+            <span>What services do you offer?</span>
+            <span class="faq-icon">+</span>
+        </div>
 
-            <details class="faq-item">
-                <summary>What technologies do you work with?</summary>
-                <p>I work with modern technologies including React, TypeScript, Python, PHP, JavaScript, Node.js, and various databases. I also have experience with AI/ML frameworks and cloud deployment.</p>
-            </details>
+        <div class="faq-answer">
+            <p>
+                I offer full-stack web development, UI/UX design,
+                AI-driven solutions, and IT consulting. Whether you need
+                a business website, an ecommerce platform, or a custom
+                software solution, I can help bring your vision to life.
+            </p>
+        </div>
+    </div>
 
-            <details class="faq-item">
-                <summary>Do you work with clients remotely?</summary>
-                <p>Yes! I work with clients globally from Malawi, Africa. I use modern collaboration tools to ensure smooth communication and project delivery regardless of location.</p>
-            </details>
+    <div class="faq-item">
+        <div class="faq-question">
+            <span>What technologies do you work with?</span>
+            <span class="faq-icon">+</span>
+        </div>
 
-            <details class="faq-item">
-                <summary>How can I hire you for a project?</summary>
-                <p>You can reach out through the contact form below, or connect with me via email or LinkedIn. I'll get back to you within 24 hours to discuss your project requirements and timeline.</p>
-            </details>
+        <div class="faq-answer">
+            <p>
+                I work with React, TypeScript, JavaScript, PHP, Python,
+                Node.js, MySQL, and modern web technologies. I also have
+                experience with AI solutions and cloud deployment.
+            </p>
+        </div>
+    </div>
 
-            <details class="faq-item">
-                <summary>What is your typical project timeline?</summary>
-                <p>Project timelines vary based on complexity. A simple website may take 1-2 weeks, while complex platforms can take 1-3 months. I always provide clear timelines during our initial consultation.</p>
-            </details>
+    <div class="faq-item">
+        <div class="faq-question">
+            <span>Do you work with clients remotely?</span>
+            <span class="faq-icon">+</span>
+        </div>
 
-            <details class="faq-item">
-                <summary>Do you provide ongoing support after project completion?</summary>
-                <p>Yes, I offer maintenance and support packages to ensure your project continues to run smoothly after launch. This includes updates, bug fixes, and feature enhancements.</p>
-            </details>
-        </section>
+        <div class="faq-answer">
+            <p>
+                Yes. I work with clients globally from Malawi and use
+                modern collaboration tools to ensure smooth communication
+                and project delivery.
+            </p>
+        </div>
+    </div>
 
-        <section class="contact">
+    <div class="faq-item">
+        <div class="faq-question">
+            <span>How can I hire you for a project?</span>
+            <span class="faq-icon">+</span>
+        </div>
+
+        <div class="faq-answer">
+            <p>
+                You can contact me through the form below or connect with
+                me via email or LinkedIn. I'll respond as soon as possible
+                to discuss your project.
+            </p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">
+            <span>What is your typical project timeline?</span>
+            <span class="faq-icon">+</span>
+        </div>
+
+        <div class="faq-answer">
+            <p>
+                Timelines depend on project complexity. Small websites
+                may take 1–2 weeks, while larger platforms can take
+                several months.
+            </p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">
+            <span>Do you provide support after launch?</span>
+            <span class="faq-icon">+</span>
+        </div>
+
+        <div class="faq-answer">
+            <p>
+                Yes. I provide maintenance, updates, bug fixes,
+                performance improvements, and feature enhancements after
+                deployment.
+            </p>
+        </div>
+    </div>
+</section>
+
+        <section class="contact" id="contact">
             <h2>Contact Me</h2>
             <form action="" method="POST">
                 <input type="text" id="name" name="name" placeholder="Your Name" required>

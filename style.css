@@ -27,6 +27,10 @@ header {
     z-index: 1000;
 }
 
+.hamburger{
+    display: none;
+}
+
 .icon img {
     width: 20px;
 }
@@ -228,54 +232,74 @@ section {
     text-align: left;
 }
 
-.faq-item {
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 15px;
-    background: #fff;
+.faq-item{
+    border:1px solid #ddd;
+    border-radius:5px;
+    margin-bottom:15px;
+    background:#fff;
+    overflow:hidden;
 }
 
-.faq-item summary {
-    font-size: 15px;
-    font-weight: 600;
-    color: #222;
-    cursor: pointer;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.faq-question{
+    padding:15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    cursor:pointer;
+    font-weight:600;
 }
 
-.faq-item summary::-webkit-details-marker {
-    display: none;
+.faq-answer{
+    display:none;
+    padding:15px;
+    border-top:1px solid #eee;
 }
 
-.faq-item summary::after {
-    content: "+";
-    font-size: 18px;
-    font-weight: bold;
-    color: #555;
+.faq-item.active .faq-answer{
+    display:block;
 }
 
-.faq-item[open] summary::after {
-    content: "−";
+.faq-icon{
+    font-size:20px;
+    font-weight:bold;
 }
 
-.faq-item p {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #555;
-    line-height: 1.6;
-}
-
-.faq-item[open] {
-    border-color: #999;
-    transition: 0.3s ease;
-}
-
-/* Responsive adjustments */
 @media (max-width: 600px) {
+
+.hamburger{
+        display:block;
+        cursor:pointer;
+        font-size:28px;
+    }
+
+.logo{
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+    padding: 20px;
+    width: 100%;
+}
+
+.nav-link{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    display: none;
+    border-top: 1px solid #ddd;
+}
+
+.nav-link.active{
+    display: block;
+}
+
+.nav-link ul{
+    padding: 20px;
+    flex-direction: column;
+}
+
+
     .exp-header,
     .project-header {
         flex-direction: column;
