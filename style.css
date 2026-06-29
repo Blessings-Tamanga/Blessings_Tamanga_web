@@ -1,8 +1,13 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 
 body {
     background-color: #f9f9f9;
@@ -384,4 +389,15 @@ footer {
     border-top: 1px solid #ddd;
     font-size: 14px;
     color: #555;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
 }

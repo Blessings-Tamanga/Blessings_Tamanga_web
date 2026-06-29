@@ -26,3 +26,22 @@ faqQuestions.forEach(question => {
                 : "+";
     });
 });
+
+const reveals = document.querySelectorAll(".hero-content, .about, .experience, .projects, .faq, .contact");
+
+function revealOnScroll() {
+    const windowHeight = window.innerHeight;
+
+    reveals.forEach((el) => {
+        const elementTop = el.getBoundingClientRect().top;
+
+        if (elementTop < windowHeight - 100) {
+            el.classList.add("active");
+        } else {
+            el.classList.remove("active");
+        }
+    });
+}
+
+window.addEventListener("scroll", revealOnScroll);
+window.addEventListener("load", revealOnScroll);
